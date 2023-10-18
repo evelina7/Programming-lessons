@@ -11,9 +11,15 @@ namespace Task_03
         static void Main(string[] args)
         {
             Console.WriteLine(new string('*', 10));
-            Console.WriteLine("*        *");
-            Console.WriteLine("*        *");
-            Console.WriteLine("*        *");
+            Console.Write("*");
+            Console.Write(new string(' ', 8));
+            Console.WriteLine("*");
+            Console.Write("*");
+            Console.Write(new string(' ', 8));
+            Console.WriteLine("*");
+            Console.Write("*");
+            Console.Write(new string(' ', 8));
+            Console.WriteLine("*");
             Console.WriteLine(new string('*', 10));
         }
     }
