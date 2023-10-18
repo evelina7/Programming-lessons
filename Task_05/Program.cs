@@ -21,19 +21,15 @@ namespace Task_05
             var b = 2;
             var c = 4;
 
-            var suma = a + b;
-            var skirtumas = a - b;
-            var sandauga = a * b;
-            var dalyba = a / b;
             var kvadratas = b * b;
             var treciasis_laipsnis = b * b * b;
             var visu_sandauga = a * b * c;
 
             Console.WriteLine("1. ");
-            Console.WriteLine("Suma: {0} + {1} = {2} ", a, b,suma);
-            Console.WriteLine("Skirtumas: {0} - {1} = {2} ", a, b, skirtumas);
-            Console.WriteLine("Sandauga: {0} * {1} = {2} ", a, b, sandauga);
-            Console.WriteLine("Dalyba: {0} / {1} = {2} ", a, b, dalyba);
+            Console.WriteLine($"Suma: {a} + {b} = {a+b} ");
+            Console.WriteLine($"Skirtumas: {a} - {b} = {a - b} ");
+            Console.WriteLine($"Sandauga: {a} * {b} = {a * b} ");
+            Console.WriteLine($"Dalyba: {a} / {b} = {a / b} ");
             Console.WriteLine();
 
             /*
@@ -43,8 +39,8 @@ namespace Task_05
 
             Console.WriteLine("2. ");
             Console.WriteLine("Skaičius: {0}", b);
-            Console.WriteLine("Skaičiaus kvadratas: {0}", kvadratas);
-            Console.WriteLine("Skaičius pakeltas trečiuoju laipsniu: {0}", treciasis_laipsnis);
+            Console.WriteLine($"Skaičiaus kvadratas: {b*b}");
+            Console.WriteLine($"Skaičius pakeltas trečiuoju laipsniu: {b*b*b}");
             Console.WriteLine();
 
             /*
@@ -53,7 +49,7 @@ namespace Task_05
 
             Console.WriteLine("3. ");
             Console.WriteLine("Skaičiai: {0}, {1}, {2}", a,b,c);
-            Console.WriteLine("Skaičių sandauga: {0}", visu_sandauga);
+            Console.WriteLine($"Skaičių sandauga: {a*b*c}");
 
         }
     }

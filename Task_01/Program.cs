@@ -20,7 +20,7 @@ namespace Task_01
 
             Console.Write("1. ");
             Console.Write("Labas, Evelina");
-            Console.WriteLine("");
+            Console.WriteLine();
 
             /*
              Susikurkite kintamąjį žmogaus amžiui nusakyti, išveskite 
@@ -32,7 +32,7 @@ namespace Task_01
             int a = 20;
             Console.Write("2. ");
             Console.Write("Įvestas amžius: {0}", a);
-            Console.WriteLine("");
+            Console.WriteLine();
 
             /*
              Susikurkite skaičiaus kintamąjį, kurį išveskite 

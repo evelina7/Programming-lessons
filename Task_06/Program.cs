@@ -50,6 +50,13 @@ namespace Task_06
             skaičiaus reikšme. Išveskite į ekraną šio skaičiaus 
             skaitmenų sandaugą.
             */
+
+            int dvizenklisSkaicius = 28;
+            int desimtys = dvizenklisSkaicius / 10;
+            int vienetai = dvizenklisSkaicius % 10;
+
+            Console.WriteLine($"Dvizenklis skaicius: {dvizenklisSkaicius}");
+            Console.WriteLine($"Skaitmenu sandauga: {desimtys} * {vienetai} = {desimtys*vienetai}");
         }
     }
 }
