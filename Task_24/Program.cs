@@ -36,9 +36,9 @@ namespace Task_24
                 {
                     suma1 += masyvas[i];
                 }
-                else if (masyvas[i] % 2 != 0)
+                else if (kiekis % 2 != 0)
                 { 
-                    suma2 += masyvas[i];
+                    suma2++;
                 }
             }
 
