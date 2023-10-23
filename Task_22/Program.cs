@@ -49,7 +49,14 @@ namespace Task_22
             }
 
             Console.WriteLine("1.");
-            Console.WriteLine($"Savaitės temperaturos rodmenys: {temperatura[0]}, {temperatura[1]}, {temperatura[2]}, {temperatura[3]}, {temperatura[4]}, {temperatura[5]}, {temperatura[6]}");
+            Console.Write($"Savaitės temperaturos rodmenys: ");
+
+            for (var i = 0; i < temperatura.Length; i++)
+            {
+                    Console.Write(temperatura[i] + ", ");
+            }
+
+            Console.WriteLine();
             Console.WriteLine($"žemiausia temperatūra: {min}");
             Console.WriteLine($"didžiausia temperatūra: {max}");
             Console.WriteLine($"Vidurkis yra: {vidurkis}");
