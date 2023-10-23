@@ -37,12 +37,14 @@ namespace Task_21
             Console.WriteLine(markes[2]);
 
             //Papildyti praeitos užduoties kodą.
-            //Išvesti narių skaičių, pirmą narį ir paskutinį  narį bent iš vieno pasirinkto masyvo.
+            //Išvesti narių skaičių, pirmą narį ir paskutinį narį bent iš vieno pasirinkto masyvo.
+
+            int paskutinisELementas = pazymiai[pazymiai.Length - 1];
 
             Console.WriteLine();
             Console.WriteLine(pazymiai.Length);
             Console.WriteLine("Pirmasis narys yra {0}", pazymiai[0]);
-            Console.WriteLine("Paskutinysis narys yra {0}", pazymiai[5]);
+            Console.WriteLine("Paskutinysis narys yra {0}", paskutinisELementas);
 
         }
     }
