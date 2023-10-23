@@ -53,15 +53,15 @@ namespace Task_22
 
             for (var i = 0; i < temperatura.Length; i++)
             {
-                    Console.Write(temperatura[i] + ", ");
+                    Console.Write(temperatura[i] + " ");
             }
 
             Console.WriteLine();
             Console.WriteLine($"žemiausia temperatūra: {min}");
             Console.WriteLine($"didžiausia temperatūra: {max}");
             Console.WriteLine($"Vidurkis yra: {vidurkis}");
-            Console.WriteLine($"Temperatūrų, esančių žemiau už vidurkį, kiekis yra: {minSuma} / {minKiekis} = {minSuma / minKiekis}");
-            Console.WriteLine($"Temperatūrų, esančių daugiau už vidurkį, kiekis yra: {maxSuma} / {maxKiekis} = {maxSuma / maxKiekis}");
+            Console.WriteLine($"Temperatūrų, esančių žemiau už vidurkį, kiekis yra: {minKiekis} ");
+            Console.WriteLine($"Temperatūrų, esančių daugiau už vidurkį, kiekis yra:  {maxKiekis} ");
             Console.WriteLine();
 
             //Susikurkite studentų pažymių masyvą. Raskite:
@@ -70,33 +70,36 @@ namespace Task_22
             //kiek mokinių yra gavę neigiamą pažymį(žemiau nei 4);
             //pažymių vidurkį.
 
-            var pazymys = new int[] { 10,9,8,10,7 };
-            var maxPazymys = pazymys.Max();
-            var maxPazymysKiekis = 0;
-            var minPazymysKiekis = 0;
+            var pazymiai = new int[] { 10,9,8,10,7 };
+            var maxPazymys = pazymiai.Max();
+            var destimtukuKiekis = 0;
+            var neigiamuPazymiuKiekis = 0;
 
-            for (var i = 0; i < pazymys.Length; i++)
+            for (var i = 0; i < pazymiai.Length; i++)
             {
-                if (pazymys[i] == 10)
+                if (pazymiai[i] == 10)
                 {
-                    maxPazymysKiekis++;
+                    destimtukuKiekis++;
+                }
+                if (pazymiai[i] < 4)
+                {
+                    neigiamuPazymiuKiekis++;
                 }
             }
 
-            for (var i = 0; i < pazymys.Length; i++)
-            {
-                if (pazymys[i] < 4)
-                {
-                    minPazymysKiekis++;
-                }
-            }
-            
             Console.WriteLine("2.");
-            Console.WriteLine($"Pažymiai: {pazymys[0]}, {pazymys[1]}, {pazymys[2]}, {pazymys[3]}, {pazymys[4]}");
+            Console.Write($"Pažymiai: ");
+
+            for (var i = 0; i < pazymiai.Length; i++)
+            {
+                Console.Write(pazymiai[i] + " ");
+            }
+
+            Console.WriteLine();
             Console.WriteLine($"Geriausias pažymys: {maxPazymys}");
-            Console.WriteLine($"Mokiniai, gavę dešimtukus: {maxPazymysKiekis}");
-            Console.WriteLine($"Mokiniai, gavę neigiamą pažymį (žemiau nei 4): {minPazymysKiekis}");
-            Console.WriteLine($"Visų pažymių vidurkį: {pazymys.Sum() / pazymys.Length}");
+            Console.WriteLine($"Mokiniai, gavę dešimtukus: {destimtukuKiekis}");
+            Console.WriteLine($"Mokiniai, gavę neigiamą pažymį (žemiau nei 4): {neigiamuPazymiuKiekis}");
+            Console.WriteLine($"Visų pažymių vidurkį: {pazymiai.Sum() / pazymiai.Length}");
         }
     }
 }
