@@ -16,6 +16,7 @@ namespace Task_28
 
             Tekstas();
         }
+
         private static void Tekstas()
         {
             Console.WriteLine("Labas! :) ");
