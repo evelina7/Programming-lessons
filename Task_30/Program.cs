@@ -14,21 +14,34 @@ namespace Task_29
             //Skirtumas;
             //Sandauga;
             //Dalmuo;
+            //Ne visai pagal užduotį. Skaičių įvedimas iš vartotojo turėtų vykti Main metode o skaičiavimai kiekvienas atskirame metode o ne visi kartu.
 
-            Skaiciuokle();
-        }
-        private static void Skaiciuokle()
-        {
             Console.Write("Pirmasis skaičius: ");
             int skaicius1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Antrasis skaičius: ");
             int skaicius2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Suma {skaicius1} + {skaicius2} = {skaicius1 + skaicius2}");
-            Console.WriteLine($"Skirtumas {skaicius1} - {skaicius2} = {skaicius1 - skaicius2}");
-            Console.WriteLine($"Sandauga {skaicius1} * {skaicius2} = {skaicius1 * skaicius2}");
-            Console.WriteLine($"Dalmuo {skaicius1} / {skaicius2} = {skaicius1 / skaicius2}");
+            Suma(skaicius1, skaicius2);
+            Skirtumas(skaicius1, skaicius2);
+            Sandauga(skaicius1, skaicius2);
+            Dalmuo(skaicius1, skaicius2);
+        }
 
+        private static void Suma(int skaicius1, int skaicius2)
+        {
+            Console.WriteLine($"Suma {skaicius1} + {skaicius2} = {skaicius1 + skaicius2}");
+        }
+        private static void Skirtumas(int skaicius1, int skaicius2)
+        {
+            Console.WriteLine($"Skirtumas {skaicius1} - {skaicius2} = {skaicius1 - skaicius2}");
+        }
+        private static void Sandauga(int skaicius1, int skaicius2)
+        {
+            Console.WriteLine($"Sandauga {skaicius1} * {skaicius2} = {skaicius1 * skaicius2}");
+        }
+        private static void Dalmuo(int skaicius1, int skaicius2)
+        {
+            Console.WriteLine($"Dalmuo {skaicius1} / {skaicius2} = {skaicius1 / skaicius2}");
         }
     }
 }
