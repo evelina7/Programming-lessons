@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Task_29
 {
@@ -14,10 +15,6 @@ namespace Task_29
             //Visi šie duomenys yra duodami metodui, kuris visą šią informaciją išveda
             //formatuotai
 
-            Pasisveikinimas();
-        }
-        private static void Pasisveikinimas()
-        {
             Console.Write("Jūsų vardas: ");
             string vardas = Console.ReadLine();
             Console.Write("Jūsų amžius: ");
@@ -25,6 +22,10 @@ namespace Task_29
             Console.Write("Jūsų hobis: ");
             string hobis = Console.ReadLine();
 
+            Pasisveikinimas(vardas, amzius, hobis);
+        }
+        internal static void Pasisveikinimas(string vardas, int amzius, string hobis)
+        {
             Console.WriteLine($"Labas, {vardas}! ({amzius}) m.");
             Console.WriteLine($"Jūsų hobis: {hobis}"); 
 
