@@ -20,6 +20,7 @@ namespace Task_34
             Console.WriteLine("Įveskite du skaičius: ");
             int ivestasSkaicius1 = Convert.ToInt32(Console.ReadLine());
             int ivestasSkaicius2 = Convert.ToInt32(Console.ReadLine());
+            Program aritmetinisVeiksmas = new Program();
 
             Console.WriteLine("Pasirinkite, kokį veiksmą norite atlikti su šiais skaičiais: ");
             Console.WriteLine("1 - jei daugyba ");
@@ -28,15 +29,13 @@ namespace Task_34
 
             if (veiksmas == 1)
             {
-                Program daugyba = new Program();
-                var resultDaugyba = daugyba.Daugyba(ivestasSkaicius1, ivestasSkaicius2);
+                var resultDaugyba = aritmetinisVeiksmas.Daugyba(ivestasSkaicius1, ivestasSkaicius2);
                 Console.WriteLine($"Atsakymas: {resultDaugyba}");
                 Console.WriteLine();
             }
             else if (veiksmas == 2)
             {
-                Program dalyba = new Program();
-                var resultDalyba = dalyba.Dalyba(ivestasSkaicius1, ivestasSkaicius2);
+                var resultDalyba = aritmetinisVeiksmas.Dalyba(ivestasSkaicius1, ivestasSkaicius2);
                 Console.WriteLine($"Atsakymas: {resultDalyba}");
                 Console.WriteLine();
             }
@@ -45,10 +44,12 @@ namespace Task_34
                 Console.WriteLine("Tokio veiksmo nėra.");
             }
         }
+
         private double Daugyba(double a1, double a2)
         {
             return a1 * a2;
         }
+        
         private double Dalyba(double b1, double b2)
         {
             return b1 / b2;
