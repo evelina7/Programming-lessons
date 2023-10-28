@@ -42,7 +42,7 @@ namespace Task_14
                 case 3:
                     Console.WriteLine("Planšete galite naudotis visur");
                     break;
-                    default: Console.WriteLine("Nurodyto pasirinkimo nėra.");
+                default: Console.WriteLine("Nurodyto pasirinkimo nėra.");
                     break;
             }
             Console.WriteLine();
