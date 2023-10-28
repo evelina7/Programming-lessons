@@ -17,9 +17,9 @@ namespace Task_07
 
             Console.WriteLine("1.");
             Console.Write("Įveskite savo vardą: ");
-            var vardas = Console.ReadLine();
+            string vardas = Console.ReadLine();
             Console.Write("Įveskite savo amžių: ");
-            var amzius = Console.ReadLine();
+            int amzius = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine($"Jūsų vardas {vardas}, o amžius {amzius}");
             Console.WriteLine();
@@ -40,7 +40,7 @@ namespace Task_07
 
             Console.WriteLine("3.");
             Console.Write("Įveskite bet kokį skaičių: ");
-            var skaicius = Convert.ToDouble(Console.ReadLine());
+            double skaicius = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"šio skaičiaus kvadratas yra {skaicius * skaicius}");
             Console.WriteLine();
 
@@ -51,9 +51,9 @@ namespace Task_07
 
             Console.WriteLine("4.");
             Console.WriteLine("Įveskite bet kokius tris skaičius: ");
-            var skaicius1 = Convert.ToDouble(Console.ReadLine());
-            var skaicius2 = Convert.ToDouble(Console.ReadLine());
-            var skaicius3 = Convert.ToDouble(Console.ReadLine());
+            double skaicius1 = Convert.ToDouble(Console.ReadLine());
+            double skaicius2 = Convert.ToDouble(Console.ReadLine());
+            double skaicius3 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine();
             Console.WriteLine($"{skaicius1} + {skaicius2} + {skaicius3} = {skaicius1 + skaicius2 + skaicius3}");
             Console.WriteLine();
