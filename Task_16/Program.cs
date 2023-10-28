@@ -65,11 +65,7 @@ namespace Task_16
 
             for (var i = 0; i < 1000; i++)
             {
-                if (i % 3 == 0)
-                {
-                    suma2 += i;
-                }
-                else if (i % 5 == 0)
+                if (i % 3 == 0 || i % 5 == 0)
                 {
                     suma2 += i;
                 }
