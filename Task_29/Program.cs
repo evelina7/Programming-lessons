@@ -24,6 +24,7 @@ namespace Task_29
 
             Pasisveikinimas(vardas, amzius, hobis);
         }
+
         internal static void Pasisveikinimas(string vardas, int amzius, string hobis)
         {
             Console.WriteLine($"Labas, {vardas}! ({amzius}) m.");
