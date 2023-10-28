@@ -13,7 +13,8 @@ namespace Task_26
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            //Sugeneruokite atsitiktinio dydžio sąrašą, kurį užpildykite atsitiktiniais  skaičiais nuo 1 iki 100.Raskite:
+            //Sugeneruokite atsitiktinio dydžio sąrašą, kurį užpildykite atsitiktiniais  skaičiais nuo 1 iki 100.
+            //Raskite:
             //mažiausią skaičių;
             //didžiausią skaičių;
             //vidurkį;
@@ -22,24 +23,31 @@ namespace Task_26
 
             Console.WriteLine("1. Užduotis");
 
-            List<double> listSkaiciai = new List<double> { 9, 10, 85, 84.5, 30, 11.5, 77, 17, 27, 99 };
+            List<double> listSkaiciai = new List<double>();
+            Random rand = new Random();
 
             double minKiekis = 0;
             double suma = 0;
-            double vidurkis = listSkaiciai.Average();
+            double vidurkis = 0;
 
-            foreach (double skaicius in listSkaiciai) 
-            { 
-                Console.WriteLine(skaicius);
+            for (int i = 1; i <= 100; i++)
+            {
+                double listSkaicius = rand.Next(1, 100);
+                listSkaiciai.Add(listSkaicius);
+            }
 
-                if (skaicius < vidurkis)
-                {
-                    minKiekis++;
-                }
+            foreach (double skaicius in listSkaiciai)
+            {
+                Console.Write(skaicius + " ");
+                vidurkis = listSkaiciai.Average();
 
                 if (skaicius % 2 == 0)
                 {
                     suma += skaicius;
+                }
+                if (skaicius < vidurkis)
+                {
+                    minKiekis++;
                 }
             }
 
