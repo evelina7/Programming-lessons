@@ -74,7 +74,7 @@ namespace Task_33
         }
         private double KelimasKetvirtuoju(double c1, double c2)
         {
-            return Math.Pow((c1 + c2), 3);  
+            return Math.Pow((c1 + c2), 4);  
         }
         private double KvadratineSaknis(double d1, double d2)
         {
