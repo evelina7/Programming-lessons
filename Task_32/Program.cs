@@ -17,15 +17,14 @@ namespace Task_32
             //Išvesti šią frazę į konsolę.
 
             Console.Write("Įveskite savo vardą: ");
-            string ivestasVardas = Console.ReadLine();
-            Program p = new Program();
-            var result = p.Vardas(ivestasVardas);
-            Console.WriteLine($"Sveiki, {result}!");
-            Console.WriteLine();
+            string vardas = Console.ReadLine();
+
+            Vardas(vardas);
         }
-        private string Vardas(string vardas)
+
+        internal static void Vardas(string vardas)
         {
-            return vardas;
+            Console.WriteLine($"Sveiki, {vardas}!");
         }
     }
 }
