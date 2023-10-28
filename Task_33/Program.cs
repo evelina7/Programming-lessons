@@ -25,6 +25,7 @@ namespace Task_33
             Console.WriteLine("Įveskite du skaičius: ");
             int ivestasSkaicius1 = Convert.ToInt32(Console.ReadLine());
             int ivestasSkaicius2 = Convert.ToInt32(Console.ReadLine());
+            Program skaiciuotuvas = new Program();
 
             Console.WriteLine("Pasirinkite, kokį veiksmą norite atlikti su šiais skaičiais: ");
             Console.WriteLine("1 - jei sudėtis ");
@@ -36,26 +37,22 @@ namespace Task_33
             switch (veiksmas)
             {
                 case 1:
-                    Program sudetis = new Program();
-                    var resultSudetis = sudetis.Sudetis(ivestasSkaicius1, ivestasSkaicius2);
+                    var resultSudetis = skaiciuotuvas.Sudetis(ivestasSkaicius1, ivestasSkaicius2);
                     Console.WriteLine($"Atsakymas: {resultSudetis}");
                     Console.WriteLine();
                     break;
                 case 2:
-                    Program atimtis = new Program();
-                    var resultAtimtis = atimtis.Atimtis(ivestasSkaicius1, ivestasSkaicius2);
+                    var resultAtimtis = skaiciuotuvas.Atimtis(ivestasSkaicius1, ivestasSkaicius2);
                     Console.WriteLine($"Atsakymas: {resultAtimtis}");
                     Console.WriteLine();
                     break;
                 case 3:
-                    Program kelimasKetvirtuoju = new Program();
-                    var resultKelimasKetvirtuoju = kelimasKetvirtuoju.KelimasKetvirtuoju(ivestasSkaicius1, ivestasSkaicius2);
+                    var resultKelimasKetvirtuoju = skaiciuotuvas.KelimasKetvirtuoju(ivestasSkaicius1, ivestasSkaicius2);
                     Console.WriteLine($"Atsakymas: {resultKelimasKetvirtuoju}");
                     Console.WriteLine();
                     break;
                 case 4:
-                    Program kvadratineSaknis = new Program();
-                    var resultKvadratineSaknis = kvadratineSaknis.KvadratineSaknis(ivestasSkaicius1, ivestasSkaicius2);
+                    var resultKvadratineSaknis = skaiciuotuvas.KvadratineSaknis(ivestasSkaicius1, ivestasSkaicius2);
                     Console.WriteLine($"Atsakymas: {resultKvadratineSaknis}");
                     break;
                     default:
