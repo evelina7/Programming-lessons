@@ -22,11 +22,11 @@ namespace Task_08
             Console.Write("Įveskite bet kokį sveikąjį skaičių: ");
             var skaicius = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"{skaicius} x {1} = {skaicius * 1}");
-            Console.WriteLine($"{skaicius} x {2} = {skaicius * 2}");
-            Console.WriteLine($"{skaicius} x {3} = {skaicius * 3}");
-            Console.WriteLine($"{skaicius} x {4} = {skaicius * 4}");
-            Console.WriteLine($"{skaicius} x {5} = {skaicius * 5}");
+            Console.WriteLine($"{skaicius} x 1 = {skaicius * 1}");
+            Console.WriteLine($"{skaicius} x 2 = {skaicius * 2}");
+            Console.WriteLine($"{skaicius} x 3 = {skaicius * 3}");
+            Console.WriteLine($"{skaicius} x 4 = {skaicius * 4}");
+            Console.WriteLine($"{skaicius} x 5 = {skaicius * 5}");
             Console.WriteLine("");
 
             //Liepkite vartotojui įvesti tris skaičius.
