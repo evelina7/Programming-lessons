@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task_36
 {
-    internal class Mokinys
+    public class Mokinys
     {
 
         //Sukurti klasę Mokinys su kintamaisiais: vardas, pavardė, amžius, klasė ir  pažymių sąrašą, kur saugosime 5 pažymius.
@@ -19,6 +19,8 @@ namespace Task_36
         public int Amzius;
         public string Klase;
         public List<int> PazymiuSarasas;
+        public Mokinys kintamasis { get;}
+        public int Pazymys = 0;
 
         public Mokinys(string vardas, string pavarde, int amzius, string klase, List<int> pazymiuSarasas)
         {
@@ -40,6 +42,22 @@ namespace Task_36
                 Console.Write(PazymiuSarasas[i] + " ");
             }
             Console.WriteLine();
+        }
+
+        //Klasės viduje sukurti void tipo metodą, kuris išvestų į ekraną už, kiek metų  mokinys baigs mokyklą,
+        //jei atsakymas 0 – tuomet išvesti „Mokinys mokyklą  baigs šiais metais“. Iškviesti metodą Main‘o viduje visiems objektams.
+
+        public void LikoMetuMokytis()
+        {
+           if (Amzius == 19)
+            {
+                Console.WriteLine("Mokinys mokyklą  baigs šiais metais.");
+            }
+            else if (Amzius < 19) 
+            {
+                int skirtumas = 19 - Amzius;
+                Console.WriteLine($"Mokinys mokyklą  baigs už {skirtumas} metų.");
+            }
         }
     }
 }
