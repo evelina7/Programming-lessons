@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 
 namespace Task_01
@@ -43,7 +40,7 @@ namespace Task_01
             var number = 25;
 
             Console.Write("3. ");
-            Console.Write("{0}{1}{2}{3}{4}",number,number,number,number,number);
+            Console.Write("{0}{0}{0}{0}{0}",number);
             Console.WriteLine("");
 
             /*
